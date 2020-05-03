@@ -1,13 +1,22 @@
 module.exports = {
+
+  plugins: [
+    { src: '~/plugins/nuxt-swiper-plugin.js', ssr: false }
+  ],
+  css: [
+    'swiper/dist/css/swiper.css'
+  ],
+
   /*
   ** Headers of the page
   */
   head: {
-    title: '{{ name }}',
+    title: '在线教育 - Java视频|HTML5视频|前端视频|Python视频|大数据视频-自学拿1万+月薪的IT在线视频课程',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '{{escape description }}' }
+      { hid: 'keywords', name: 'keywords', content: '在线教育,IT在线视频教程,Java视频,HTML5视频,前端视频,Python视频,大数据视频' },
+      { hid: 'description', name: 'description', content: '在线教育是国内领先的IT在线视频学习平台、职业教育平台。' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
